@@ -1,0 +1,21 @@
+<!-- app/src/main/res/values/themes.xml -->
+<resources>
+    <!--
+        Theme.NeonClock: 全画面イマーシブ表示のためのテーマ
+        - NoActionBar: アクションバー（タイトルバー）を非表示
+        - windowBackground を黒に設定（起動時のちらつき防止）
+        - 実際のシステムUI非表示は MainActivity.kt の WindowInsetsController で制御
+    -->
+    <style name="Theme.NeonClock" parent="android:Theme.Material.NoActionBar">
+        <!-- 起動時の黒背景（アプリ読み込み中の白背景チラツキ防止） -->
+        <item name="android:windowBackground">@android:color/black</item>
+
+        <!-- ステータスバーとナビゲーションバーを透明に（完全非表示はコードで制御） -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+
+        <!-- ライトステータスバーアイコンを使用（背景が暗いため） -->
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+    </style>
+</resources>

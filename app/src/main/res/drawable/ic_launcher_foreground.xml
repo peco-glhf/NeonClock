@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- 外側グロウ: center(54,54) r=30 → M24,54 -->
+    <path
+        android:fillColor="#1A39FF14"
+        android:pathData="M24,54 a30,30,0,1,0,60,0 a30,30,0,1,0,-60,0" />
+
+    <!-- 時計面（極暗いグリーン塗り）: center(54,54) r=26 → M28,54 -->
+    <path
+        android:fillColor="#0A1A0A"
+        android:pathData="M28,54 a26,26,0,1,0,52,0 a26,26,0,1,0,-52,0" />
+
+    <!-- 時計外枠: center(54,54) r=26 → M28,54 -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#39FF14"
+        android:strokeWidth="3.5"
+        android:pathData="M28,54 a26,26,0,1,0,52,0 a26,26,0,1,0,-52,0" />
+
+    <!-- 12時マーク: (54,28) r=2.5 → M51.5,28 -->
+    <path
+        android:fillColor="#39FF14"
+        android:pathData="M51.5,28 a2.5,2.5,0,1,0,5,0 a2.5,2.5,0,1,0,-5,0" />
+
+    <!-- 3時マーク: (80,54) r=2.5 → M77.5,54 -->
+    <path
+        android:fillColor="#39FF14"
+        android:pathData="M77.5,54 a2.5,2.5,0,1,0,5,0 a2.5,2.5,0,1,0,-5,0" />
+
+    <!-- 6時マーク: (54,80) r=2.5 → M51.5,80 -->
+    <path
+        android:fillColor="#39FF14"
+        android:pathData="M51.5,80 a2.5,2.5,0,1,0,5,0 a2.5,2.5,0,1,0,-5,0" />
+
+    <!-- 9時マーク: (28,54) r=2.5 → M25.5,54 -->
+    <path
+        android:fillColor="#39FF14"
+        android:pathData="M25.5,54 a2.5,2.5,0,1,0,5,0 a2.5,2.5,0,1,0,-5,0" />
+
+    <!-- 時針（7時方向 len=10 → L49,63） -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#39FF14"
+        android:strokeWidth="4.5"
+        android:strokeLineCap="round"
+        android:pathData="M54,54 L49,63" />
+
+    <!-- 分針（12時方向 len=18 → L54,36） -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#39FF14"
+        android:strokeWidth="3"
+        android:strokeLineCap="round"
+        android:pathData="M54,54 L54,36" />
+
+    <!-- 中心点: center(54,54) r=3 → M51,54 -->
+    <path
+        android:fillColor="#39FF14"
+        android:pathData="M51,54 a3,3,0,1,0,6,0 a3,3,0,1,0,-6,0" />
+
+</vector>

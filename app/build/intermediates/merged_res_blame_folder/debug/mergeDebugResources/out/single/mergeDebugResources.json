@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/Users/ryu/.gradle/daemon/9.0.0/com.example.neonclock.app-debug-47:/font_inter_bold.ttf.flat",
+        "source": "/Users/ryu/.gradle/daemon/9.0.0/com.example.neonclock.app-main-49:/font/inter_bold.ttf"
+    },
+    {
+        "merged": "/Users/ryu/.gradle/daemon/9.0.0/com.example.neonclock.app-debug-47:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/Users/ryu/.gradle/daemon/9.0.0/com.example.neonclock.app-main-49:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.neonclock.app-debug-47:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.example.neonclock.app-main-49:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "/Users/ryu/.gradle/daemon/9.0.0/com.example.neonclock.app-debug-47:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "/Users/ryu/.gradle/daemon/9.0.0/com.example.neonclock.app-main-49:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "/Users/ryu/.gradle/daemon/9.0.0/com.example.neonclock.app-debug-47:/drawable_ic_launcher_background.xml.flat",
+        "source": "/Users/ryu/.gradle/daemon/9.0.0/com.example.neonclock.app-main-49:/drawable/ic_launcher_background.xml"
+    }
+]
