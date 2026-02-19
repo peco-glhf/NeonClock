@@ -57,6 +57,9 @@ dependencies {
     // Activity Compose
     implementation(libs.androidx.activity.compose)
 
+    // Lifecycle Runtime Compose（LocalLifecycleOwner / repeatOnLifecycle）
+    implementation(libs.androidx.lifecycle.runtime.compose)
+
     // Core KTX（WindowCompat などのユーティリティ）
     implementation(libs.androidx.core.ktx)
 

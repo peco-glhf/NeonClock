@@ -23,6 +23,9 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
+import androidx.lifecycle.Lifecycle
+import androidx.lifecycle.compose.LocalLifecycleOwner
+import androidx.lifecycle.repeatOnLifecycle
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.semantics.clearAndSetSemantics
@@ -106,15 +109,18 @@ fun NeonClockScreen() {
 
     val textMeasurer = rememberTextMeasurer()
     val density = LocalDensity.current
+    val lifecycleOwner = LocalLifecycleOwner.current
 
-    LaunchedEffect(Unit) {
-        while (true) {
-            val now = ZonedDateTime.now(jstZone)
-            timeText = now.format(timeFormatter)
-            dateText = formatDate(now)
-            val secondsRemaining = 60 - now.second
-            val millisRemaining = secondsRemaining * 1000L - (now.nano / 1_000_000L)
-            delay(millisRemaining.coerceAtLeast(100L))
+    LaunchedEffect(lifecycleOwner) {
+        lifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
+            while (true) {
+                val now = ZonedDateTime.now(jstZone)
+                timeText = now.format(timeFormatter)
+                dateText = formatDate(now)
+                val secondsRemaining = 60 - now.second
+                val millisRemaining = secondsRemaining * 1000L - (now.nano / 1_000_000L)
+                delay(millisRemaining.coerceAtLeast(100L))
+            }
         }
     }
 

@@ -15,6 +15,9 @@ androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = 
 # Activity Compose
 androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
 
+# Lifecycle Runtime Compose（LocalLifecycleOwner / repeatOnLifecycle）
+androidx-lifecycle-runtime-compose = { group = "androidx.lifecycle", name = "lifecycle-runtime-compose", version = "2.8.7" }
+
 # Compose BOM（全Composeライブラリのバージョンを統一管理）
 androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
 

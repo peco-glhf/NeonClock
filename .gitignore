@@ -1,0 +1,23 @@
+# ビルド生成物
+build/
+app/build/
+.gradle/
+
+# ローカル設定（SDK パスは環境によって異なる）
+local.properties
+
+# Android Studio
+.idea/
+*.iml
+.DS_Store
+
+# キーストア（署名鍵は絶対にコミットしない）
+*.jks
+*.keystore
+
+# ログ
+*.log
+
+# 開発用内部ドキュメント（テンプレート・AIプロンプトなど）
+_dev/
+_doc/
