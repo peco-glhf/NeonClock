@@ -21,3 +21,6 @@ local.properties
 # 開発用内部ドキュメント（テンプレート・AIプロンプトなど）
 _dev/
 _doc/
+
+# 一時保存画像
+image/
